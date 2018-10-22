@@ -1,0 +1,30 @@
+header {
+  height: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px #444 dotted;
+}
+
+header nav a {
+  float: right;
+  text-transform: uppercase;
+}
+
+header nav p {
+  float: right;
+  margin: 0 1rem 0 1rem;
+}
+
+header nav a:first-child { float: left; }
+
+header nav:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+.entry {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
