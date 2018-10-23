@@ -2,8 +2,8 @@ title: "Kyle Huggins - TAZ"
 author: "Kyle Huggins"
 description: >- # this means to ignore newlines until "baseurl:"
   Kyle Huggins' home directory on TAZ.
-baseurl: ""
-url: ""
+baseurl: "/~khuggins"
+url: "http://taz.harding.edu"
 
 github_username: kjhx
 
