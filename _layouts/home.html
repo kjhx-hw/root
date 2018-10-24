@@ -5,6 +5,6 @@ footer: false
 
 {% for post in site.posts %}
 <div class="entry">
-  <span>[{{ post.categories }}]</span> <a href="{% if post.redirect %} {{ post.redirect }} {% else %} {{ site.baseurl }}{{ post.url }} {% endif %}">{{ post.title }} {% if post.desc %}<span style="color: #c8c8c8"> / {{ post.desc }}</span>{% endif %}</a>
+  <span>[{{ post.categories }}]</span> <a href="{% if post.redirect %} {{ post.redirect }} {% else %} {{ site.baseurl }}{{ post.url }} {% endif %}">{{ post.title }} {% if post.desc %}<span class="darken"> / {{ post.desc }}</span>{% endif %}</a>
 </div>
 {% endfor %}
