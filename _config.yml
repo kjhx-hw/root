@@ -10,5 +10,5 @@ github_username: kjhx
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
+  - jekyll-gist
 permalink: /:categories/:title.html
