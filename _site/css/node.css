@@ -56,6 +56,18 @@ a:hover {
   color: #09ecb3;
   text-decoration: underline; }
 
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-family: monospace;
+  color: #404b5b;
+  background: #07bb8e;
+  border-radius: 4px; }
+
+pre code {
+  display: block;
+  white-space: pre-wrap; }
+
 /* Layout
  –––––––––––––––––––––––*/
 div[frame], div.frame {
@@ -168,6 +180,9 @@ header nav a {
 header nav p {
   float: right;
   margin: 0 1rem 0 1rem; }
+
+header nav p:last-child {
+  display: none; }
 
 header nav a:first-child {
   float: left; }
