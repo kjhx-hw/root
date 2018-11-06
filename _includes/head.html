@@ -4,6 +4,6 @@
     <title>{{ site.title | escape }}{% if page.title %} - {{ page.title | escape }}{% endif %}</title>
     <meta name="author" content="{{ site.author }}">
     <meta name="description" content="{{ site.description }}">
-    <link rel="stylesheet" href="{{ "css/node.css" | relative_url }}" />
+    <link rel="preload" href="{{ "css/node.css" | relative_url }}" media="screen" onload="this.rel='stylesheet'"/>
     <link rel="preload" href="{{ "css/gist-dark.css" | relative_url }}" media="screen" onload="this.rel='stylesheet'"/>
 </head>
