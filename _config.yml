@@ -11,4 +11,9 @@ github_username: kjhx
 markdown: kramdown
 plugins:
   - jekyll-gist
+  - jekyll-minifier
+
 permalink: /:categories/:title.html
+
+sass:
+  style: compressed
