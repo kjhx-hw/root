@@ -8,6 +8,7 @@ url: "http://taz.harding.edu"
 github_username: kjhx
 
 # Build settings
+exclude: ["Makefile", "README.md", "Gemfile", "Gemfile.lock"]
 markdown: kramdown
 plugins:
   - jekyll-gist
