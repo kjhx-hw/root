@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "php practice"
-desc: "understanding cookies and sessions"
+title: "PHP Practice"
+desc: "understanding Cookies and Sessions"
 categories: hmw
 ---
 

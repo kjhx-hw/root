@@ -1,5 +1,5 @@
 ---
 redirect: "http://taz.harding.edu/~khuggins/git/meta/temperature/"
-title: "temperature converter"
+title: "Temperature Converter"
 categories: hmw
 ---

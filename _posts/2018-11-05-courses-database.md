@@ -1,6 +1,6 @@
 ---
 redirect: "http://taz.harding.edu/~khuggins/courses.php"
-title: "courses database"
-desc: "php + mysql"
+title: "Courses Database"
+desc: "PHP & mySQL"
 categories: hmw
 ---
