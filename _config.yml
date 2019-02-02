@@ -10,6 +10,7 @@ github_username: kjhx
 # Build settings
 exclude: ["Makefile", "README.md", "Gemfile", "Gemfile.lock"]
 markdown: kramdown
+highlighter: none
 plugins:
   - jekyll-gist
   - jekyll-minifier

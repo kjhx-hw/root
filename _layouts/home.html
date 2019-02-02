@@ -1,10 +1,17 @@
 ---
 layout: core
-footer: false
+footer: true
 ---
+<div class="hero">
+  <div class="message mod-mb">
+    <h3 class="mono">Welcome_</h3>
+    <p>I've collected the majority of projects and other assignments I did in COMP 250 below. There's short writeups on some of the more interesting ones, and some code samples where helpful. I hope you find something useful. Keep in mind that some of the projects dealing with PHP will break over time as changes are made to the server.</p>
+    <p>The source code for all of this can be found on <a href="https://github.com/kjhx-hw/">GitHub</a>.</p>
+  </div>
+</div>
 
 {% for post in site.posts %}
 <div class="entry">
-  <span>[{{ post.categories }}]</span> <a href="{% if post.redirect %} {{ post.redirect }} {% else %} {{ site.baseurl }}{{ post.url }} {% endif %}">{{ post.title }} {% if post.desc %}<span class="darken"> / {{ post.desc }}</span>{% endif %}</a>
+  <h3><a href="{% if post.redirect %} {{ post.redirect }} {% else %} {{ site.baseurl }}{{ post.url }} {% endif %}">{{ post.title }}{% if post.desc %} – {{ post.desc }} {% endif %}</a></h3>
 </div>
 {% endfor %}

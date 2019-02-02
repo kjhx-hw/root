@@ -1,6 +1,6 @@
 ---
 redirect: "http://taz.harding.edu/~khuggins/dolphin.exe"
-title: door-prizes
-desc: "random door prize game"
+title: "Door Prizes"
+desc: "I did this project wrong but the CSS is nice"
 categories: prj
 ---

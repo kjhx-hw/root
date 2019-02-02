@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "sharing grund.css"
-desc: "a classless css template"
+title: "Sharing grund.css"
+desc: "a classless CSS template"
 categories: git
 ---
 
@@ -11,11 +11,13 @@ To combat this problem, I wrote a tiny css blurb named [Grund](http://github.com
 
 Grund is a classless, drop-in stylesheet that takes an unstyled webpage and transforms it into something clean, modern, and approachable. For example, it can take a simple webpage from looking like this:
 
-![Before.png]({{ site.baseurl }}/images/sharing-grund/before.png)
+![Before.png]({{ site.baseurl }}/assets/images/sharing-grund/before.png)
 
 To something more like this:
 
-![After.png]({{ site.baseurl }}/images/sharing-grund/after.png)
+![After.png]({{ site.baseurl }}/assets/images/sharing-grund/after.png)
+
+Obviously it makes much more dramatic changes on webpages that contain tons of content – I was just using this as an example. It's also updated live through NPM, so your website will always have the latest version.
 
 ## Using grund.css
 

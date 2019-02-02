@@ -1,19 +1,19 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>~/kh - php practice</title> <meta name="author" content="Kyle Huggins"> <meta name="description" content="Kyle Huggins' home directory on TAZ."> <link rel="stylesheet" href="/~khuggins/site/css/node.css" media="screen"/> <link rel="stylesheet" href="/~khuggins/site/css/gist-dark.css" media="screen"/> </head> <body> <header> <div frame> <nav> <a href="/~khuggins/site/" style="text-transform: lowercase;">~/kh</a> <a href="https://huggins.io/" target="_blank">Website</a> <p> / </p> <a href="https://github.com/kjhx/" target="_blank">GitHub</a> <p> / </p> </nav> </div> </header> <div class="content"> <div frame> <h1>php practice<span class="darken"> / understanding cookies and sessions</span></h1> <p>There are two parts to this one.</p> <ul> <li><a href="http://taz.harding.edu/~khuggins/count_session.php">Session</a></li> <li><a href="http://taz.harding.edu/~khuggins/count_cookies.php">Cookies</a></li> </ul> <p>Each iterates a counter based on session or cookie data. Here’s some sample code from each, respectively.</p> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="nb">session_start</span><span class="p">();</span>
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>~/kh - PHP Practice</title> <meta name="author" content="Kyle Huggins"> <meta name="description" content="Kyle Huggins' home directory on TAZ."> <link rel="stylesheet" href="/~khuggins/site/assets/css/pressman.css" media="screen"/> <link rel="stylesheet" href="/~khuggins/site/assets/css/mod.css" media="screen"/> </head> <body> <header> <nav class="header"> <a href="/~khuggins/site/">~/kh</a> <a href="https://huggins.io/" title="">Website</a> <a href="https://github.com/kjhx/" title="">GitHub</a> </nav> </header> <main> <div class="container"> <h1>PHP Practice</h1> <p>There are two parts to this one.</p> <ul> <li><a href="http://taz.harding.edu/~khuggins/count_session.php">Session</a></li> <li><a href="http://taz.harding.edu/~khuggins/count_cookies.php">Cookies</a></li> </ul> <p>Each iterates a counter based on session or cookie data. Here’s some sample code from each, respectively.</p> <pre><code>&lt;?php
+session_start();
 
-<span class="k">if</span> <span class="p">(</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_SESSION</span><span class="p">[</span><span class="s2">"counter"</span><span class="p">]))</span> <span class="p">{</span>
-  <span class="nv">$_SESSION</span><span class="p">[</span><span class="s2">"counter"</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-  <span class="nv">$_SESSION</span><span class="p">[</span><span class="s2">"counter"</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="p">}</span>
-<span class="cp">?&gt;</span>
-</code></pre></div></div> <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;?php</span>
-<span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">isset</span><span class="p">(</span><span class="nv">$_COOKIE</span><span class="p">[</span><span class="s2">"counter"</span><span class="p">]))</span> <span class="p">{</span>
-  <span class="nb">setcookie</span><span class="p">(</span><span class="s2">"counter"</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-  <span class="nv">$counter</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-  <span class="nv">$counter</span> <span class="o">=</span> <span class="nv">$_COOKIE</span><span class="p">[</span><span class="s1">'counter'</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-  <span class="nb">setcookie</span><span class="p">(</span><span class="s2">"counter"</span><span class="p">,</span> <span class="nv">$counter</span><span class="p">);</span>
-<span class="p">}</span>
-<span class="cp">?&gt;</span>
-</code></pre></div></div> </div> </div> </body> </html>
+if (isset($_SESSION["counter"])) {
+  $_SESSION["counter"] += 1;
+} else {
+  $_SESSION["counter"] = 1;
+}
+?&gt;
+</code></pre> <pre><code>&lt;?php
+if (!isset($_COOKIE["counter"])) {
+  setcookie("counter", 1);
+  $counter = 1;
+} else {
+  $counter = $_COOKIE['counter'] + 1;
+  setcookie("counter", $counter);
+}
+?&gt;
+</code></pre> </div> </main> <footer> <div class="container"> <nav class="header"> <img src="/~khuggins/site//assets/images/khlc.png" title="Kyle Huggins" height="20rem" draggable="false"> <a href="mailto:kyle@huggins.io?subject=TAZ">kyle@huggins.io</a> </nav> </div> </footer> </body> </html>

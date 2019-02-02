@@ -1,17 +1,8 @@
 <header>
-  <div frame>
-    <nav>
-      <a href="{{ site.baseurl }}" style="text-transform: lowercase;">{{ site.title }}</a>
-      <!---->
-      {% for link in site.data.navigation %}
-        {% if link.url contains 'http' %}
-          {% assign domain = '' %}
-          {% else %}
-          {% assign domain = site.url %}
-        {% endif %}
-        <a href="{{ domain }}{{ link.url }}" {% if link.url contains 'http' %}target="_blank"{% endif %}>{{ link.title }}</a>
-        <p> / </p>
-      {% endfor %}
-    </nav>
-  </div>
+  <nav class="header">
+    <a href="{{ site.baseurl }}{{ site.relative_url }}">{{ site.title }}</a>
+    {% for link in site.data.navigation %}
+      <a href="{{ link.url }}" title="{{ link.desc }}">{{ link.title }}</a>
+    {% endfor %}
+  </nav>
 </header>

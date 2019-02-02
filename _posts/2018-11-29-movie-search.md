@@ -1,6 +1,6 @@
 ---
 redirect: "http://taz.harding.edu/~khuggins/moviesearch.html"
-title: "movie search"
-desc: "ajax + api introduction"
+title: "Movie Search"
+desc: "AJAX & API Introduction"
 categories: hmw
 ---
